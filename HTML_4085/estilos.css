@@ -1,0 +1,34 @@
+* {
+  margin: 10;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  display: grid;
+  place-content: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to bottom right,
+    #342ac2 0%,
+    #777888 20%,
+    #518f72 40%,
+    #8f3838 60%,
+    #735b74 80%
+  );
+
+  background-size: 200% 200%;
+  animation: movimiento 7s linear infinite alternate;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
